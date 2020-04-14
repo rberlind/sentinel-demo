@@ -1,5 +1,5 @@
 policy "require-private-acl-and-kms-for-s3-buckets" {
-    enforcement_level = "advisory"
+    enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-ec2-instance-type" {
@@ -7,7 +7,7 @@ policy "restrict-ec2-instance-type" {
 }
 
 policy "enforce-mandatory-tags" {
-   enforcement_level = "advisory"
+   enforcement_level = "soft-mandatory"
 }
 
 module "tfplan-functions" {
