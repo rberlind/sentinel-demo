@@ -11,5 +11,5 @@ policy "enforce-mandatory-tags" {
 }
 
 module "tfplan-functions" {
-    source = "./common-functions/tfplan-functions.sentinel"
+    source = "../common-functions/tfplan-functions.sentinel"
 }
