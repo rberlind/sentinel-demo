@@ -3,7 +3,7 @@ policy "require-private-acl-and-kms-for-s3-buckets" {
 }
 
 policy "restrict-ec2-instance-type" {
-    enforcement_level = "soft-mandatory"
+    enforcement_level = "hard-mandatory"
 }
 
 policy "enforce-mandatory-tags" {
