@@ -10,6 +10,14 @@ policy "enforce-mandatory-tags" {
    enforcement_level = "soft-mandatory"
 }
 
+policy "allow-module-for-each" {
+   enforcement_level = "soft-mandatory"
+}
+
 module "tfplan-functions" {
     source = "./common-functions/tfplan-functions/tfplan-functions.sentinel"
+}
+
+module "tfconfig-functions" {
+    source = "./common-functions/tfconfig-functions/tfconfig-functions.sentinel"
 }
