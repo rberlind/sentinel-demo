@@ -12,6 +12,9 @@ for moduleCalls as address, m {
   if m.for_each else null is not null {
     print("Module Call", address, "has for_each set to", m.for_each)
   }
+  if m.count else null is not null {
+    print("Module Call", address, "has count set to", m.count)
+  }
 }
 
 # Main rule
