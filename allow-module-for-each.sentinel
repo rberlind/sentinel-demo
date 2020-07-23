@@ -15,9 +15,9 @@ for moduleCalls as address, m {
   if m.count else null is not null {
     print("Module Call", address, "has count set to", m.count)
   }
-  //if m.depends_on else null is not null {
+  if m.depends_on else null is not null {
     print("Module Call", address, "has depends_on set to", m.depends_on)
-  //}
+  }
 }
 
 # Main rule
