@@ -1,10 +1,8 @@
 # This policy uses the tfconfig/v2 import to allow
 # modules to use for_each
 
-# Import the tfconfig/v2 import, but use the alias "tfconfig"
-import "tfconfig/v2" as tfconfig
-# Standard strings import
-import "strings"
+# Import common-functions/tfconfig-functions.sentinel with alias "tfconfig"
+import "tfconfig-functions" as tfconfig
 
 # Find all module calls
 moduleCalls = tfconfig.find_module_calls_in_module("")
