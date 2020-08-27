@@ -9,6 +9,7 @@ moduleCalls = tfconfig.find_module_calls_in_module("")
 
 # Iterate over module calls to find those with for_each
 for moduleCalls as address, m {
+  print("module:", m)
   if m.for_each else null is not null {
     print("Module Call", address, "has for_each set to", m.for_each)
   }
